@@ -41,7 +41,6 @@ a {
 .nav {
     display: flex;
     visibility: hidden;
-    padding: 1rem;
 }
 
 
@@ -53,7 +52,7 @@ header {
     background-color: #0011ad;
     position: sticky;
     top: 0;
-    left: 0;
+    padding: 1em 0 1em 0;
 }
 
 .menu-btn {
@@ -86,9 +85,7 @@ header {
     padding: 1rem;
     margin: 3px 0 10 0px;
     border-radius: 3px;
-    box-shadow: 1px 2px 6px black;
-    /* transform: translate(-110%, 0%); */
-    
+    box-shadow: 1px 2px 6px black; 
 }
 
 .section.collaboration {
