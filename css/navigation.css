@@ -9,6 +9,12 @@ body {
 
 }
 
+img {
+    height: 100%;
+    width: 100%;
+    
+}
+
 h2 {
     margin: 0;
     font-weight:600;
@@ -83,6 +89,22 @@ header {
     box-shadow: 1px 2px 6px black;
     /* transform: translate(-110%, 0%); */
     
+}
+
+.section.collaboration {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.col {
+  justify-self: baseline;
+  flex-basis: 45%;
+}
+
+.col > img {
+    justify-self: flex-start;
+    object-fit: cover;
 }
 
 .section-para {
