@@ -10,9 +10,7 @@ body {
 }
 
 img {
-    height: 100%;
     width: 100%;
-    
 }
 
 h2 {
@@ -88,20 +86,19 @@ header {
     box-shadow: 1px 2px 6px black; 
 }
 
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
 .section.collaboration {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-items: baseline;
 }
 
-.col {
-  justify-self: baseline;
-  flex-basis: 45%;
-}
-
-.col > img {
-    justify-self: flex-start;
-    object-fit: cover;
+.col h2 {
+    margin-top: .5em;
 }
 
 .section-para {
@@ -111,5 +108,36 @@ header {
 @media (max-width:370px) {
     body{
         min-width: 370px;
+    }
+}
+
+@media (min-width:420px){
+    .col {
+        align-items: center;
+    }
+
+    .col img {
+        max-width: 420px;
+    }
+}
+
+@media (min-width:720px) {
+    .menu-btn {
+        visibility: hidden;
+    }
+
+    .nav {
+        visibility:visible;
+    }
+    .section.collaboration{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .col {
+        flex-basis: 45%;
+    }
+
+    .col h2 {
+        margin: 0;
     }
 }
