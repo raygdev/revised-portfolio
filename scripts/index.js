@@ -3,10 +3,10 @@ const navbar = document.querySelector(".nav");
 let sectionsList = Array.from(document.querySelectorAll(".collaboration"));
 
 menubtn.addEventListener("click", function () {
-  if (navbar.style.visibility === "hidden") {
-    navbar.style.visibility = "visible";
-  } else {
-    navbar.style.visibility = "hidden";
+   if(navbar.style.visibility.length === 0){
+        navbar.style.visibility = 'visible'
+   }else {
+    navbar.style.visibility = "";
   }
 });
 
