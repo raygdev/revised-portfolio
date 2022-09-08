@@ -5,7 +5,7 @@ let sectionsList = Array.from(document.querySelectorAll(".collaboration"));
 menubtn.addEventListener("click", function () {
    if(navbar.style.visibility.length === 0){
         navbar.style.visibility = 'visible'
-   }else {
+   } else {
     navbar.style.visibility = "";
   }
 });
